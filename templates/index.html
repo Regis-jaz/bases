@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center">
+    <h3 class="text-primary">Bienvenido a mi primer desarrollo de plantilla base</h3>
+    <p class="lead">Holiiiii, ojalá esto fuera una página que tratara sobre Melanie Martinez, Ariana Grande
+         o incluso Selena Gomez, pero en realidad aquí encontrarás información sobre las maravillas del mundo,
+          vehículos antiguos y animales, a petición del profe Trevi.</p>
+    <p class="lead">Como sea, bienvenido a mi plantilla y para recibir un video musical.</p>
+
+    <div class="mt-4">
+        <video class="rounded" width="60%" controls>
+            <source src="static/selena.mp4" type="video/mp4">
+        </video>
+        <img src="static/na.jpeg" class="rounded" alt="Machu Picchu" width="50%">
+        <img src="static/nana.jpeg" class="rounded" alt="Machu Picchu" width="50%">
+    </div>
+</div>
+{% endblock %}
