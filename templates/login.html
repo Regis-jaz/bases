@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow mt-5">
+            <div class="card-body">
+                <div class="card-header mb-4 text-center bg-white border-0">
+                    <h1 class="fw-bold text-primary">Iniciar Sesión</h1>
+                    <p>Accede a tu cuenta de usuario.</p>
+                </div>
+
+                <form method="POST" action="/login">
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico (prueba: test@ejemplo.com)</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Correo Electrónico" required>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña (prueba: 123)</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" required>
+                    </div>
+
+                    <div class="d-grid gap-2 mb-4">
+                        <button type="submit" class="btn btn-primary btn-lg">Entrar</button>
+                    </div>
+
+                    <hr>
+
+                    <p class="text-center">
+                        <a href="#" class="link-primary">¿Olvidaste tu contraseña?</a>
+                    </p>
+                    <div class="text-center mt-3">
+                        <a href="/sesion" class="btn btn-success">¿No tienes cuenta? Regístrate</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
